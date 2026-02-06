@@ -14,10 +14,21 @@ import { execSync } from "child_process";
 import router from "./srv/router.js";
 import path from "node:path";
 
-const git_url = (await execSync("git config --get remote.origin.url").toString()); 
+let git_url = "";
+let commit = "";
+let git = null;
 
-const commit = await execSync("git rev-parse HEAD").toString();
-const git = new Git(git_url);
+try {
+  git_url = (await execSync("git config --get remote.origin.url").toString());
+  commit = await execSync("git rev-parse HEAD").toString();
+  git = new Git(git_url);
+} catch (error) {
+  // Git not available (running in container or standalone)
+  console.warn("⚠️  Git not available - running in standalone mode");
+  git_url = process.env.GIT_URL || "https://github.com/NxroProxy/DayDreamX";
+  commit = process.env.GIT_COMMIT || "unknown";
+  git = new Git(git_url);
+}
 
 const server = http.createServer();
 const app = express();
