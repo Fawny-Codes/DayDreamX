@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deploy - DayDream X</title>
+    <link rel="stylesheet" href="/assets/css/website.css" />
+    <link rel="icon" type="icon/x-icon" href="/assets/imgs/logo.png" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/">DayDream X</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/features.html">Features</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/deploy.html" class="active">Deploy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Deployment Guide</h1>
+            <p>Get DayDream X running on your server</p>
+        </div>
+    </section>
+
+    <!-- Deployment Content -->
+    <section class="deployment-content">
+        <div class="container">
+            <h2>⚠️ Important Note</h2>
+            <p class="warning-box">DayDream X cannot be hosted on static web hosting services such as Netlify, GitHub Pages, or Cloudflare Pages. You need a server that can run Node.js.</p>
+
+            <h2>Local Installation</h2>
+            <p>To run DayDream X locally on your machine:</p>
+            <ol>
+                <li>Clone the repository:
+                    <div class="code-block">git clone https://github.com/NxroProxy/DayDreamX.git</div>
+                </li>
+                <li>Navigate to the project directory:
+                    <div class="code-block">cd DayDreamX</div>
+                </li>
+                <li>Install dependencies (choose your preferred package manager):
+                    <div class="code-block">npm i</div>
+                    <p class="alt-text">or</p>
+                    <div class="code-block">bun install</div>
+                    <p class="alt-text">or</p>
+                    <div class="code-block">pnpm install</div>
+                </li>
+                <li>Start the development server:
+                    <div class="code-block">npm start</div>
+                    <p class="alt-text">or</p>
+                    <div class="code-block">bun start</div>
+                    <p class="alt-text">or</p>
+                    <div class="code-block">pnpm start</div>
+                </li>
+            </ol>
+            <p>The browser will be available at <code>http://localhost:3000</code> (port may vary).</p>
+
+            <h2>Cloud Deployment</h2>
+            <p>DayDream X can be deployed to various cloud platforms that support Node.js:</p>
+
+            <h3>Deploy to Koyeb</h3>
+            <p>One-click deployment to Koyeb:</p>
+            <p><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/NxroProxy/DayDreamX" target="_blank" class="btn btn-primary">Deploy to Koyeb</a></p>
+
+            <h3>Other Platforms</h3>
+            <p>You can also deploy to:</p>
+            <ul>
+                <li><strong>Heroku:</strong> Using Git push or Docker</li>
+                <li><strong>Railway:</strong> Connect your GitHub repository</li>
+                <li><strong>Render:</strong> Simple Git integration</li>
+                <li><strong>DigitalOcean:</strong> Deploy on Droplets or App Platform</li>
+                <li><strong>AWS:</strong> Using EC2, App Runner, or Elastic Beanstalk</li>
+                <li><strong>Self-hosted:</strong> Deploy to any VPS or dedicated server</li>
+            </ul>
+
+            <h2>Updating</h2>
+            <p>To update to the latest version:</p>
+            <div class="code-block">git pull --force --allow-unrelated-histories</div>
+
+            <h2>Package Managers</h2>
+            <p>DayDream X supports multiple package managers:</p>
+            <ul>
+                <li><strong>npm:</strong> Node Package Manager (included with Node.js)</li>
+                <li><strong>pnpm:</strong> Fast, space-efficient package manager</li>
+                <li><strong>bun:</strong> Fast all-in-one JavaScript runtime (recommended)</li>
+            </ul>
+            <p>DayDream X includes lock files for all three package managers, so choose whichever you prefer.</p>
+
+            <h2>System Requirements</h2>
+            <ul>
+                <li><strong>Node.js:</strong> v14 or higher</li>
+                <li><strong>RAM:</strong> Minimum 512MB (1GB+ recommended)</li>
+                <li><strong>Storage:</strong> Minimum 500MB free space</li>
+            </ul>
+
+            <h2>Troubleshooting</h2>
+            <p>If you encounter issues:</p>
+            <ul>
+                <li>Make sure Node.js is properly installed: <code>node --version</code></li>
+                <li>Clear node_modules and reinstall: <code>rm -rf node_modules && npm install</code></li>
+                <li>Check that required ports are available</li>
+                <li>Review logs for error messages</li>
+                <li>Open an issue on <a href="https://github.com/NxroProxy/DayDreamX/issues" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DayDream X. All rights reserved.</p>
+            <p><a href="https://github.com/NxroProxy/DayDreamX" target="_blank">View on GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

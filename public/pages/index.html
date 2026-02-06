@@ -1,70 +1,82 @@
 <!doctype html>
-
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DayDream X</title>
-    <link rel="stylesheet" href="/assets/css/vars.css" />
-    <link rel="stylesheet" href="/assets/css/imports.css" />
-    <link rel="stylesheet" href="/assets/css/global.css" />
-    <link rel="stylesheet" href="/assets/css/tabs.css" />
-    <link rel="stylesheet" href="/assets/css/utilitybar.css" />
-    <link rel="stylesheet" href="/assets/css/search.css" />
-    <link rel="stylesheet" href="/assets/css/sidepanel.css" />
+    <title>DayDream X - Explore the Web Freely</title>
+    <link rel="stylesheet" href="/assets/css/website.css" />
     <link rel="icon" type="icon/x-icon" href="/assets/imgs/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Your Favorite Browser Fusion of Opera, Arc, & Opera GX"
-    />
-    <meta
-      name="keywords"
-      content="Proxy, Unblocker, Daydream, Daydream Browser, Daydream Browser Proxy, Daydream Browser Unblocker, Daydream Browser VPN"
-    />
+    <meta name="description" content="DayDream X - A modern, feature-rich proxy browser with tabs, history, theming, bookmarks, and more." />
+    <meta name="keywords" content="Proxy, Unblocker, Daydream, Browser, VPN" />
     <meta property="og:image" content="/assets/imgs/logo.png" />
-  </head>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="/">DayDream X</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/pages/features.html">Features</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/deploy.html">Deploy</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <body>
-    <!--Root DIV-->
-    <div id="browser-container"></div>
-    <!--Libs-->
-    <script src="/assets/js/lib/js-cookie/js.cookie.min.js"></script>
-    <script src="/assets/js/lib/localforage/localforage.min.js"></script>
-    <script src="/assets/js/lib/wisp-client-js/wisp-client.js"></script>
-    <script src="/assets/js/lib/draggability/draggabilly.pkgd.js"></script>
-    <script src="/assets/js/lib/Nightmare/nightmare.js"></script>
-    <!--Pro*y Files-->
-    <script src="/baremux/index.js"></script>
-    <script src="/@/uv.bundle.js"></script>
-    <script src="/@/uv.config.js"></script>
-    <script src="/$/scramjet.config.js"></script>
-    <script src="/$/scramjet.controller.js"></script>
-    <script src="/~/eclipse.codecs.js"></script>
-    <script src="/~/eclipse.config.js"></script>
-    <script src="/&/sandstone.js"></script>
-    <!--APIs-->
-    <script src="/assets/js/apis/events.js"></script>
-    <script src="/assets/js/apis/logging.js"></script>
-    <script src="/assets/js/apis/profiles.js"></script>
-    <script src="/assets/js/apis/settings.js"></script>
-    <script src="/assets/js/apis/extensions.js"></script>
-    <script src="/assets/js/apis/versions.js"></script>
-    <script src="/assets/js/apis/exporting.js"></script>
-    <script src="/assets/js/apis/proxy.js"></script>
-    <!--Other files-->
-    <script src="/assets/js/global/theming.js"></script>
-    <script src="/assets/js/global/index.js"></script>
-    <script src="/assets/js/browser/render.js"></script>
-    <script src="/assets/js/browser/items.js"></script>
-    <script src="/assets/js/browser/nightmarePlugins.js"></script>
-    <script src="/assets/js/browser/windowing.js"></script>
-    <script src="/assets/js/browser/functions.js"></script>
-    <script src="/assets/js/browser/keys.js"></script>
-    <script src="/assets/js/utils.js"></script>
-    <script src="/assets/js/browser/tabs.js"></script>
-    <script src="/assets/js/browser/search.js"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the Web with DayDream X</h1>
+            <p>A modern, feature-rich proxy browser designed for freedom and flexibility</p>
+            <div class="hero-buttons">
+                <a href="/pages/features.html" class="btn btn-primary">Explore Features</a>
+                <a href="/pages/deploy.html" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </section>
 
-    <script src="/assets/js/index.js" defer></script>
-  </body>
+    <!-- Quick Features Section -->
+    <section class="features-preview">
+        <div class="container">
+            <h2>Why Choose DayDream X?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🔒 Privacy First</h3>
+                    <p>Browse with built-in cloaking and privacy features to keep your activity secure.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📑 Tabbed Browsing</h3>
+                    <p>Switch between multiple sites seamlessly with a familiar tabbed interface.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Customizable Themes</h3>
+                    <p>Personalize your browser with multiple theming options including Arc, Opera, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📚 Full History</h3>
+                    <p>Keep track of your browsing history and access visited sites easily.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⭐ Bookmarks</h3>
+                    <p>Save your favorite sites and organize them for quick access.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎮 Games</h3>
+                    <p>Enjoy built-in games and entertainment features while you browse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DayDream X. All rights reserved.</p>
+            <p><a href="https://github.com/NxroProxy/DayDreamX" target="_blank">View on GitHub</a></p>
+        </div>
+    </footer>
+</body>
 </html>
