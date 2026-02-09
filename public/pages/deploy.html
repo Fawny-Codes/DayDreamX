@@ -63,8 +63,33 @@
             </ol>
             <p>The browser will be available at <code>http://localhost:3000</code> (port may vary).</p>
 
+            <h2>Docker Deployment (Local Testing)</h2>
+            <p>Test the production Docker image locally:</p>
+            <ol>
+                <li>Build the Docker image:
+                    <div class="code-block">docker build -t daydreamx:latest .</div>
+                </li>
+                <li>Run the container:
+                    <div class="code-block">docker run -p 8080:8080 daydreamx:latest</div>
+                </li>
+                <li>Access the app at <code>http://localhost:8080</code></li>
+            </ol>
+
+            <p>Or use docker-compose for easier management:</p>
+            <div class="code-block">docker-compose up -d</div>
+
             <h2>Cloud Deployment</h2>
             <p>DayDream X can be deployed to various cloud platforms that support Node.js:</p>
+
+            <h3>Deploy to Railway (Recommended)</h3>
+            <p>Railway offers the easiest one-click deployment:</p>
+            <ol>
+                <li>Visit <a href="https://railway.app" target="_blank">railway.app</a></li>
+                <li>Click "New Project" → "Deploy from GitHub"</li>
+                <li>Select your DayDreamX repository</li>
+                <li>Railway automatically detects the configuration and deploys</li>
+                <li>Your live URL will be provided in the Railway dashboard</li>
+            </ol>
 
             <h3>Deploy to Koyeb</h3>
             <p>One-click deployment to Koyeb:</p>
